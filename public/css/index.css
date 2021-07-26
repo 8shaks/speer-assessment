@@ -1,0 +1,262 @@
+/* Navbar Menu css */
+
+.menu-icon {
+  background-color: transparent;
+  border: none;
+}
+.menu-icon .line {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  cursor: pointer;
+  z-index: 30;
+}
+.menu {
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  margin-top: -90px;
+  margin-left: -150px;
+  display: none;
+  padding-top: 100px;
+}
+
+.menu p {
+  color: white;
+  z-index: 50;
+  margin-left: 200px;
+  font-size: 40px;
+}
+.menu-name {
+  display: none;
+}
+.menu-cont {
+  height: 600px;
+  position: absolute;
+  top: 0;
+  padding-top: 20px;
+  left: 60px;
+  z-index: 50;
+}
+
+.company-name {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 44px;
+  margin-left: 20px;
+}
+
+/* Section red CSS */
+.red {
+  color: #d34848;
+}
+.section-red {
+  height: 100vh;
+  background-color: #d34848;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.red-left {
+  width: 50%;
+}
+.red-left h1 {
+  color: white;
+  font-size: 3.5em;
+}
+.red-left p {
+  font-size: 2.25em;
+}
+.red-right img {
+  width: 45%;
+}
+.speaker-17 {
+  margin-left: 260px;
+  margin-top: -250px;
+}
+.lower-speaker {
+  position: relative;
+}
+.lower-speaker button {
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 45px 25px;
+  position: absolute;
+  right: 275px;
+  bottom: -25px;
+  font-size: 28px;
+  background-color: transparent;
+}
+.lower-speaker button:focus,
+.lower-speaker button:active {
+  border: none;
+}
+
+/* Hero Slider CSS */
+
+.rgbKineticSlider {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.rgbKineticSlider {
+  position: relative;
+}
+.rgbKineticSlider canvas,
+#overlay {
+  position: absolute;
+}
+
+canvas {
+  position: absolute;
+}
+
+#try-now {
+  outline: 0;
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  overflow: hidden;
+  position: relative;
+  padding: 2em 3em;
+  margin: 4em;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 500ms ease-in-out;
+}
+#try-now::after {
+  content: "";
+  position: absolute;
+  background: black;
+  border-radius: 120px;
+  content: attr(data-text);
+  color: #fff !important;
+  padding: 1.6em 2.5em;
+  top: 0.4em;
+  left: 0.5em;
+  -moz-user-select: none;
+  user-select: none;
+  background: transparent !important;
+  color: black !important;
+}
+#try-now::before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 1em 2em 3em rgba(255, 50, 0, 0.5), 4em 0em 2em 2em rgba(155, 50, 0, 0.6), -4em -2em 2em 2em rgba(255, 0, 150, 0.5),
+    -4em 2em 2em 4em rgba(0, 0, 150, 0.5), 0 -3em 2em 3em rgba(120, 250, 0, 0.5), 2em -1em 2em 2em rgba(50, 10, 200, 0.5);
+  width: 0;
+  height: 0;
+  animation: mix 5s linear infinite;
+}
+#try-now:hover,
+#try-now:focus {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes mix {
+  30% {
+    box-shadow: 0 -1em 2em 3em rgb(31, 225, 233), 4em -1em 2em 3em rgb(94, 51, 209), -4em 2em 3em 2em rgb(211, 72, 72),
+      -4em -2em 2em 2em rgb(255, 179, 63);
+  }
+
+  60% {
+    box-shadow: 2em 1em 2em 3em rgb(31, 225, 233), 3em 1em 2em 3em rgb(94, 51, 209), 3em -2em 3em 3em rgb(211, 72, 72),
+      -4em 2em 2em 3em rgb(255, 179, 63);
+  }
+}
+
+nav a {
+  color: var(--color-link-hover);
+  text-decoration: none;
+  position: absolute;
+  top: 50vh;
+  z-index: 1;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--color-link-hover);
+  outline: none;
+}
+nav .main-content {
+  position: absolute;
+  z-index: 10;
+  display: inherit;
+  color: white !important;
+  width: 100%;
+}
+
+#try-now {
+  text-align: center;
+  margin-left: -130px;
+  margin-top: 200px;
+
+  padding: 20px 60px;
+  letter-spacing: 2.3px;
+  font-style: "Roboto", "sans-serif";
+  border-radius: 79px;
+  font-weight: 600;
+  font-size: 25px;
+  border: none;
+}
+#try-now:hover {
+  cursor: pointer;
+}
+nav span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-link-hover);
+  display: block;
+  margin-top: 7px;
+  -moz-transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+nav a:hover span {
+  width: 0;
+}
+
+nav a.next {
+  right: 10vw;
+}
+
+nav a.prev {
+  left: 10vw;
+}
+
+.notice {
+  text-decoration: none;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  z-index: 1;
+  color: var(--color-link);
+}
+
+@media screen and (max-width: 53em) {
+  nav a {
+    top: auto;
+    bottom: 3rem;
+  }
+
+  .notice {
+    bottom: auto;
+    top: 2rem;
+    left: 10vw;
+    left: 3rem;
+  }
+}

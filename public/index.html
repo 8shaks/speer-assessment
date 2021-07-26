@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home | Speer Assesment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="Speer Assesment" />
+    <meta property="og:type" content="" />
+    <meta property="og:image" content="./imgs/logoimg.png" />
+    <meta name="description" content="Speer Assesment" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link
+      rel="preload"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+      as="style"
+      onload="this.onload=null; this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+    /></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <main>
+    <div></div>
+    <div class="content">
+      <div class="menu-cont">
+        <button class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      </div>
+      <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+      <nav>
+        <a id="main-content"><button id="try-now">TRY NOW</button></a>
+      </nav>
+    </div>
+    <div class="section-red">
+      <div class="menu-cont">
+        <button class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <span class="company-name">EXP|CON</span>
+        <div class="menu">
+          <p class="red">WHAT IS IT</p>
+          <p>PERKS</p>
+          <p>PRICING</p>
+        </div>
+      </div>
+      <div class="red-left">
+        <h1>SUPERIOR SOUND</h1>
+        <p>Experience live versions of your favourite songs.</p>
+      </div>
+      <div class="red-right">
+        <img class="speaker-27" src="./imgs/speaker17.png" />
+        <div class="lower-speaker">
+          <button id="playButton" data-playing="false" role="switch" aria-checked="false">CLICK</button>
+          <audio src="./audio/bensound-ukulele.mp3"></audio>
+          <img class="speaker-17" src="./imgs/speaker27.png" />
+        </div>
+      </div>
+    </div>
+  </main>
+  <body>
+    <!-- TweenMax -->
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
+
+    <!-- Pixi JS -->
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slider Plugin -->
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+    <!-- Script for Hero -->
+    <script src="./js/hero.js"></script>
+    <!-- Script for navbar menu -->
+    <script src="./js/menu.js"></script>
+    <!-- Script for audio playing -->
+    <script src="./js/audio.js"></script>
+  </body>
+</html>
